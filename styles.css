@@ -21,7 +21,7 @@ body {
     font-family: var(--font-family);
     background-color: var(--background-color);
     color: var(--text-color);
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 a {
@@ -52,7 +52,22 @@ nav .navbar_right a {
 .about {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
     padding: 0 2rem;
+    gap: 2rem;
+}
+
+.about .text {
+    flex: 5;
+}
+
+.about .avatar {
+    flex: 2;
+    display: flex;
+    width: 150px;
+    height: 250px;
+    justify-content: center;
 }
 
 /* Footer */
@@ -60,13 +75,25 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 0 2rem;
 }
 
 /* Responsive on Resoluation Changes*/
 @media (max-width: 600px) {
     /* TODO: Replace this with a hamburger menu icon */
-    nav .navbar_right {
+    nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* About Section */
+    .about {
+        flex-direction: column;
+    }
+    .about .text {
+        text-align: center;
+    }
+    .about .avatar {
         display: none;
     }
 }
