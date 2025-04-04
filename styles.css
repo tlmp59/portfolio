@@ -1,0 +1,72 @@
+:root {
+    --background-color: #f8f8f8;
+    --text-color: #282828;
+    --text-color-dim: #b8b8b8;
+    --link-color: #7cafc2;
+    --font-family: 'Space Grotesk', arial;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.5;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav .navbar_left a {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+nav .navbar_right a {
+    font-size: 1rem;
+    margin: 0 0.75rem;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+/* Responsive on Resoluation Changes*/
+@media (max-width: 600px) {
+    /* TODO: Replace this with a hamburger menu icon */
+    nav .navbar_right {
+        display: none;
+    }
+}

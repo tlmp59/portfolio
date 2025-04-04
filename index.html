@@ -3,41 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-        header {
-            background: #333;
-            color: white;
-            padding: 1rem;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background: #333;
-            color: white;
-            padding: 1rem;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Attempt 1: Basic Portfolio</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Website</h1>
-    </header>
+    <!-- User and Navbar -->
+    <nav>
+        <div class="navbar_left">
+            <a class="navbar_user" href="/">PapaBear</a>
+        </div>
+
+        <div class="navbar_right">
+            <a class="navbar_link" href="#about">about</a>
+            <span class="navbar_separator">//</span>
+
+            <a class="navbar_link" href="#skill">skill</a>
+            <span class="navbar_separator">//</span>
+
+            <a class="navbar_link" href="#project">project</a>
+            <span class="navbar_separator">//</span>
+
+            <a class="navbar_link" href="#blog">blog</a>
+        </div>
+    </nav>
+
     <main>
-        <p>This is a simple webpage to get started.</p>
+        <!-- Section 1: About Me -->
+        <section id="about" class="about">
+            <div class="text">
+                <h2 class="about_intro">Oops ... you found me!</h2>
+                <p class="about_content">
+                    I don't know how you got here but I'm still working on my portfolio, so please check back later.
+                </p>
+            </div>
+
+            <div class="about_avatar">
+                <img src="asset/avatar1.webp" alt="image1">
+            </div>
+        </section>
+        <!-- Section 2: Skills -->
+        <section id="skill" class="section">
+        </section>
+        <!-- Section 3: Projects -->
+        <section id="project" class="project">
+        </section>
     </main>
+
     <footer>
-        <p>&copy; 2025 My Website</p>
+        <div class="footer_left">© 2025 PapaBear. All Rights Reserved.</div>
+        <div class="footer_right">
+            <a class="footer_link" href="#experience">experience</a>
+            <a class="footer_link" href="#contact">contact</a>
+        </div>
     </footer>
 </body>
 </html>
